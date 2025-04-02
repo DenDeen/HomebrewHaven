@@ -1,0 +1,13 @@
+# Quality of life
+- Sideswipe from tab to tab
+- D20 animation
+- information button on top of strength agility and charisma giving explanation on how it relates to roles
+
+# Dynamic fetching
+- Dynamic data fetching from firestore
+
+# Join room and have authentication and DM support
+- Admin page to be able to look add people and people in room
+- Login and authentication
+
+# testing on android
