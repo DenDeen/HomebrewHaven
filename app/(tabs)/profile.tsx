@@ -42,8 +42,13 @@ export default function ProfileScreen() { // Renamed component function for clar
       {/* Background Image */}
       <Image
          source={images.bg} // Use your background image
-         className="absolute w-full h-full z-0 opacity-30"
+         className="absolute w-full h-full z-0 opacity-5"
          resizeMode="cover"
+      />
+      <Image
+        source={images.bgflip}
+        className="absolute w-full z-0 opacity-20 bottom-0"
+        resizeMode="cover"
       />
       <Image
         source={images.dicebg}
@@ -58,16 +63,13 @@ export default function ProfileScreen() { // Renamed component function for clar
           contentContainerStyle={{ minHeight: "100%" }}
         >
           {/* Profile Header */}
-          <View className="items-center mb-6">
+          <View className="items-center mt-2">
             <Image
               source={{ uri: player.profileImage }}
               className="w-28 h-28 rounded-full border-2 border-accent mb-3" // Use accent color for border
             />
-            <Text className="text-accent font-display-bold text-3xl text-center">
-              {player.name}
-            </Text>
-            <Text className="text-text font-body text-lg text-center">
-              Level {player.level} {player.class}
+            <Text className="text-accent font-bilbo text-6xl text-center p-3">
+              {player.name.toLowerCase() }
             </Text>
           </View>
 

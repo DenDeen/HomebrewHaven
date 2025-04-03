@@ -13,6 +13,8 @@ export default function RootLayout() {
     'CinzelDecorative-Bold': require('../assets/fonts/CinzelDecorative-Bold.ttf'),
     'Lato-Regular': require('../assets/fonts/Lato-Regular.ttf'),
     'Lato-Bold': require('../assets/fonts/Lato-Bold.ttf'),
+    'Bilbo': require('../assets/fonts/Bilbo.ttf'),
+    'Norse': require('../assets/fonts/Norse.otf'), 
   });
 
   useEffect(() => {

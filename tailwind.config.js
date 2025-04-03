@@ -9,9 +9,9 @@ module.exports = {
         primary: '#1F2122', // Dark surface color, slightly lighter than background
         secondary: { // Our main "action" color
           DEFAULT: '#C43C3C', // Deep Red
-          dark: '#A62B2B',  // Darker shade (if needed)
+          dark: '#A62B2B',  // Darker shade
         },
-        accent: { // Highlight color
+        accent: {
           DEFAULT: '#E6A317', // Gold/Amber
           dark: '#B88213',   // Darker gold
         },
@@ -21,7 +21,6 @@ module.exports = {
           inverted: '#181A1B', // Text for light backgrounds (if any)
         },
         border: '#3A3D3F',    // Subtle border color
-        // Semantic colors (using Tailwind defaults adjusted slightly if needed)
         success: '#22C55E',   // Green
         danger: '#EF4444',    // Red
         warning: '#F59E0B',   // Amber/Orange (different from accent)
@@ -30,18 +29,17 @@ module.exports = {
         beige: '#EBE6CE',    // Very light gray
       },
       fontFamily: {
-        // Define custom fonts (ensure they are loaded in your app!)
-        display: ['CinzelDecorative-Regular', 'serif'], // Heading font (with fallback)
-        body: ['Lato-Regular', 'sans-serif'], // Body font (with fallback)
+        display: ['CinzelDecorative-Regular', 'serif'],
+        body: ['Lato-Regular', 'sans-serif'],
         'body-bold': ['Lato-Bold', 'sans-serif'],
         'display-bold': ['CinzelDecorative-Bold', 'serif'],
-        // Add other weights if needed (e.g., Lato-Light, CinzelDecorative-Black)
+        bilbo: ['Bilbo', 'serif'],
+        norse: ['Norse', 'sans-serif'],
       },
       borderRadius: {
-        'xl': '12px', // Slightly larger rounded corners
+        'xl': '12px',
         '2xl': '16px',
       }
-      // You can extend other properties like spacing, opacity, etc. here
     },
   },
   plugins: [],

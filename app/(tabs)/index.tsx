@@ -27,7 +27,12 @@ export default function Index() {
     <View className="flex-1 bg-background">
       <Image
         source={images.bg}
-        className="absolute w-full z-0 opacity-20"
+        className="absolute w-full z-0 opacity-5"
+        resizeMode="cover"
+      />
+      <Image
+        source={images.bgflip}
+        className="absolute w-full z-0 opacity-20 bottom-0"
         resizeMode="cover"
       />
       <Image
@@ -46,14 +51,11 @@ export default function Index() {
           <View className="mb-8 items-center">
             <Image
               source={icons.d20}
-              className="w-16 h-14 mb-3"
+              className="w-16 h-14 mt-3 mb-6"
               resizeMode="contain"
             />
-            <Text className="text-text font-display text-3xl text-center mb-1">
+            <Text className="text-text font-display text-3xl text-center">
               Welcome, {player.username}!
-            </Text>
-            <Text className="text-accent font-body text-lg text-center">
-              {player.name} - Level {player.level} {player.class}
             </Text>
           </View>
 

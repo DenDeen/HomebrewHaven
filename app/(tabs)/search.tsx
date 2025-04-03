@@ -43,7 +43,12 @@ export default function SearchScreen() {
       {/* Optional Background Image */}
       <Image
         source={images.bg}
-        className="absolute w-full h-full z-0 opacity-30"
+        className="absolute w-full h-full z-0 opacity-5"
+        resizeMode="cover"
+      />
+      <Image
+        source={images.bgflip}
+        className="absolute w-full z-0 opacity-20 bottom-0"
         resizeMode="cover"
       />
       <Image
